@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CVE-2019-15470</string>
+    <string name="start">start service of callenhancement.</string>
+    <string name="stop">stop service of callenhancement.</string>
+    <string name="duration">duration</string>
+    <string name="file_path">get sCallRecordPath.</string>
+    <string name="public_storage">/storage/emulates/0/CallRecord</string>
+    <string name="canCallRecord">hasAnyActiveCall</string>
+    <string name="bind_service">Bind Service</string>
+</resources>
