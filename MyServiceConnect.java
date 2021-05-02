@@ -1,4 +1,4 @@
-package com.example.cve_2019_15470;
+package com.example.callenhancement;
 
 import android.content.ComponentName;
 import android.content.ServiceConnection;
@@ -8,6 +8,8 @@ import android.os.RemoteException;
 import android.util.Log;
 
 public class MyServiceConnect implements ServiceConnection {
+    public int a = 1;
+    public static int b = 1;
     public IBinder myIBinder;
     @Override
     public void onServiceConnected(ComponentName componentName, IBinder iBinder) {
@@ -66,7 +68,7 @@ public class MyServiceConnect implements ServiceConnection {
      * @param code
      * @return
      */
-    public Long transact_long(int code){
+    protected Long transact_long(int code){
         Parcel data = Parcel.obtain();
         data.writeInterfaceToken("org.codeaurora.callenhancement.ICallEnhancement");
         Parcel reply = Parcel.obtain();

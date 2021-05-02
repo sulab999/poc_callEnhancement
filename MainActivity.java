@@ -1,4 +1,4 @@
-package com.example.cve_2019_15470;
+package com.example.callenhancement;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
     private MyServiceConnect myServiceConnect = new MyServiceConnect();
     private static String sCallRecordPath = (Environment.getExternalStorageDirectory() + File.separator + "CallRecord");
-bindser
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -77,11 +77,11 @@ bindser
             }
         });
 
-   }
+    }
 
-   protected String start_recorder(){
+    protected String start_recorder(){
         return myServiceConnect.transact(1);
-   }
+    }
 
     protected String stop_recorder(){
         return myServiceConnect.transact(2);
@@ -101,5 +101,6 @@ bindser
             }
         }
         text.setText(filenames.toString());
+        deadcode_test.test1();
     }
 }
